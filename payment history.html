@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaction History | Ave Maria University</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BACK ARROW ONLY -->
+<a href="index.html" class="back-arrow">←</a>
+
+<!-- FLOATING BG -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<section class="history-wrap">
+
+    <!-- LEFT INFO -->
+    <div class="history-side">
+        <span class="tag">Student Portal</span>
+        <h1>Transaction History</h1>
+        <p>
+            View all your successful, pending and failed fee payments.
+            Download receipts and track every transaction easily.
+        </p>
+
+        <div class="mini-box">
+            <h3>💳 Total Payments</h3>
+            <p>₦1,250,000</p>
+        </div>
+
+        <div class="mini-box">
+            <h3>✅ Successful</h3>
+            <p>8 Transactions</p>
+        </div>
+    </div>
+
+    <!-- RIGHT TABLE -->
+    <div class="history-card">
+
+        <div class="top-row">
+            <h2>Recent Transactions</h2>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+
+        <div class="table-wrap">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Fee Type</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="historyTable">
+
+                    <tr>
+                        <td>25 Apr 2026</td>
+                        <td>School Fees</td>
+                        <td>₦250,000</td>
+                        <td><span class="success">Successful</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>10 Mar 2026</td>
+                        <td>Hostel Fee</td>
+                        <td>₦120,000</td>
+                        <td><span class="success">Successful</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>02 Feb 2026</td>
+                        <td>Acceptance Fee</td>
+                        <td>₦80,000</td>
+                        <td><span class="pending">Pending</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>11 Jan 2026</td>
+                        <td>Departmental Fee</td>
+                        <td>₦35,000</td>
+                        <td><span class="failed">Failed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>18 Dec 2025</td>
+                        <td>Examination Fee</td>
+                        <td>₦25,000</td>
+                        <td><span class="success">Successful</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
