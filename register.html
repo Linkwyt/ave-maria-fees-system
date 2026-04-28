@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | Ave Maria University</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FLOATING BACKGROUND -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<!-- TOP BAR -->
+<header class="topbar">
+    <a href="index.html" class="back-home">← Back to Home</a>
+</header>
+
+<!-- REGISTER SECTION -->
+<section class="register-wrap">
+
+    <!-- LEFT INFO -->
+    <div class="welcome-panel">
+        <span class="tag">Student Portal</span>
+        <h1>Create Your Account</h1>
+        <p>
+            Register to access school fee payments, payment history,
+            receipts, and your student dashboard securely.
+        </p>
+
+        <div class="mini-card">
+            <h3>🔒 Secure Access</h3>
+            <p>Your data is protected and encrypted.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>⚡ Fast Registration</h3>
+            <p>Create your account in less than a minute.</p>
+        </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="form-card">
+
+        <h2>Student Registration</h2>
+        <p>Fill your details below</p>
+
+        <form id="registerForm">
+
+            <div class="grid-2">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="grid-2">
+                <input type="text" placeholder="Matric Number" required>
+
+                <select required>
+                    <option value="">Select Level</option>
+                    <option>100 Level</option>
+                    <option>200 Level</option>
+                    <option>300 Level</option>
+                    <option>400 Level</option>
+                    <option>500 Level</option>
+                </select>
+            </div>
+
+            <select required>
+                <option value="">Select Department</option>
+                <option>Computer Science</option>
+                <option>Accounting</option>
+                <option>Law</option>
+                <option>Business Administration</option>
+                <option>Nursing</option>
+                <option>Mass Communication</option>
+            </select>
+
+            <div class="password-box">
+                <input type="password" id="password" placeholder="Create Password" required>
+                <span id="togglePass">👁</span>
+            </div>
+
+            <button type="submit" class="btn-register">Create Account</button>
+
+        </form>
+
+        <div class="bottom-link">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

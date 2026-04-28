@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pay Fees | Ave Maria University</title>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<header>
+   <div class="logo">
+    <img src="image/logo.jpg" alt="Logo">
+
+    <div class="logo-text">
+        <h2>AVE MARIA UNIVERSITY</h2>
+        <span>Fees Payment Portal</span>
+    </div>
+    
+    <button class="back-btn" onclick="goBack()">← Back</button>
+</header>
+
+<section class="container">
+
+    <!-- LEFT: FORM -->
+    <div class="form-box">
+
+        <h2>Student Fee Payment</h2>
+        <p>Fill in your details to proceed</p>
+
+        <form id="payForm">
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Student full name">
+
+            <label>Registration Number</label>
+            <input type="text" placeholder="e.g AMU/2024/00123">
+
+            <label>Department</label>
+            <select>
+                <option>Computer Science</option>
+                <option>Accounting</option>
+                <option>Mass Communication</option>
+                <option>Business Administration</option>
+                <option>Law</option>
+                <option>Microbiology</option>
+                <option>Nursing</option>
+            </select>
+
+            <label>Level</label>
+            <select>
+                <option>100 Level</option>
+                <option>200 Level</option>
+                <option>300 Level</option>
+                <option>400 Level</option>
+                <option>500 Level</option>
+            </select>
+
+            <label>What are you paying for?</label>
+            <select>
+                <option>School Fees</option>
+                <option>Acceptance Fee</option>
+                <option>Hostel Fee</option>
+                <option>Departmental Fee</option>
+                <option>Examination Fee</option>
+            </select>
+
+            <label>Amount (₦)</label>
+            <input type="number" placeholder="Enter amount">
+
+            <label>Payment Method</label>
+            <select id="method">
+                <option>Bank Transfer</option>
+                <option>Card Payment</option>
+                <option>Wallet</option>
+            </select>
+
+            <button type="submit">Proceed to Pay</button>
+
+        </form>
+
+    </div>
+
+    <!-- RIGHT: SUMMARY -->
+    <div class="summary-box">
+
+        <h2>Payment Summary</h2>
+
+        <div class="summary">
+            <p><b>University:</b> Ave Maria University</p>
+            <p><b>Status:</b> Pending Payment</p>
+            <p><b>Currency:</b> Nigerian Naira (₦)</p>
+        </div>
+
+        <div class="bank-box">
+
+            <h3>Supported Banks</h3>
+
+            <p>Access Bank</p>
+            <p>GTBank</p>
+            <p>First Bank</p>
+            <p>UBA</p>
+            <p>Zenith Bank</p>
+            <p>Fidelity Bank</p>
+            <p>Kuda Bank</p>
+            <p>Opay</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
